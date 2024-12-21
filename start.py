@@ -25,7 +25,14 @@ print(float(number_float_string))
 
 #Input
 name = input("Enter your name: ")
+age = input("Enter your age: ")
 print("Welcome " + name)
+
+#if statements
+if float(age) >= 18:
+    print("You of legal age.")
+else:
+    print("You are underage.")
 
 #Calc
 num1 =input(name +' enter first number: ')
@@ -74,11 +81,17 @@ print(friends)
 friends.index('Rhay')
 print(friends)
 
-#conta item no array
+#count element in array
 print(friends.index(1))
 
-#ordena
-numbers.sort()
-print(friends)
-print(numbers)
+#order
+separate_numbers = [item for item in friends if isinstance(item, (int, float))]
+separate_friends = [item for item in friends if isinstance(item, str)]
+
+separate_numbers.sort()
+separate_friends.sort()
+print(separate_numbers)
+print(separate_friends)
+
+
 
