@@ -26,3 +26,21 @@ print(float(number_float_string))
 #Input
 name = input("Enter your name: ")
 print("Welcome " + name)
+
+#Calc
+num1 =input(name +' enter first number: ')
+num2 = input(name +' enter second number: ')
+operation = input('Enter which operation you want to do, sum, subtract, multiply, divide or average: ')
+match operation:
+    case 'sum':
+        result = float (num1) + float (num2)
+    case 'subtract':
+        result = float (num1) - float (num2)
+    case 'multiply':
+        result = float (num1) * float (num2)
+    case 'divide':
+        result = float (num1) / float (num2)
+    case 'average':
+        result = (float (num1) + float (num2)) / 2
+
+print('Result of the '+ operation +' '+ str(result))
