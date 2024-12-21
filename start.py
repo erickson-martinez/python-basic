@@ -22,3 +22,7 @@ print(number_int)
 print(number_float)
 print(int(number_int_string))
 print(float(number_float_string))
+
+#Input
+name = input("Enter your name: ")
+print("Welcome " + name)
