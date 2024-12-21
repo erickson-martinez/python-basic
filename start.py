@@ -44,3 +44,41 @@ match operation:
         result = (float (num1) + float (num2)) / 2
 
 print('Result of the '+ operation +' '+ str(result))
+
+#List in array
+friends = ['jaq', 'ppu', 'GG', 'Jaque', 'Rhay']
+numbers = [133,55,2,77,99,2,3,4,5,6,7,8,9,1,2,3,5,9,10,8,5,7,11,55,99,55]
+
+print(friends[1:3]) # index start 1 to less than 3
+print(friends[2:]) #index start 2 to end
+friends[1] = name #alter index 1
+print(friends)
+
+#join array
+friends.extend(numbers)
+print(friends)
+
+#insert in array
+friends.insert(3, 'Hiago')
+print(friends)
+
+#remove in array
+friends.remove('Jaque')
+print(friends)
+
+#remove in array by index
+friends.pop(1)
+print(friends)
+
+#finds element by index
+friends.index('Rhay')
+print(friends)
+
+#conta item no array
+print(friends.index(1))
+
+#ordena
+numbers.sort()
+print(friends)
+print(numbers)
+
